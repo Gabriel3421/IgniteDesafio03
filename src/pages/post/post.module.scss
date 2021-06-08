@@ -1,1 +1,60 @@
-// TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4rem;
+  color: var(--info);
+
+  header {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    strong {
+      font-size: 2rem;
+      color: var(--white);
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      div + div {
+        margin-left: 30px;
+      }
+      div {
+        svg {
+          margin-right: 8px;
+        }
+      }
+    }
+    & + a {
+      margin-top: 2rem;
+    }
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 50px;
+    div {
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-size: 1.5rem;
+        color: var(--white);
+        margin: 2rem 0;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
